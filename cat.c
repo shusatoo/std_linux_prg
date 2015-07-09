@@ -45,7 +45,7 @@ static void do_cat(const char *path)
         if (n == 0) {
             break;
         }
-        if (write(STDOUT_FINENO, buf, n) < 0) {
+        if (write(STDOUT_FILENO, buf, n) < 0) {
             die(path);
         }
     }
